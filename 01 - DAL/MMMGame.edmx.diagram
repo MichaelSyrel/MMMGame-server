@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5117e41f8dac4fe0a85d3c76876a0ef2" Name="Diagram1">
+        <EntityTypeShape EntityType="MMMGameModel.ContactMessage" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MMMGameModel.Feedback" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MMMGameModel.Image" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MMMGameModel.User" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MMMGameModel.Result" Width="1.5" PointX="7" PointY="1.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
