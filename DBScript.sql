@@ -1,6 +1,6 @@
-﻿USE [master]
+USE [master]
 GO
-/****** Object:  Database [MMMGame]    Script Date: 09/01/2019 12:01:50 ******/
+/****** Object:  Database [MMMGame]    Script Date: 27/01/2019 23:19:53 ******/
 CREATE DATABASE [MMMGame]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -77,7 +77,7 @@ ALTER DATABASE [MMMGame] SET QUERY_STORE = OFF
 GO
 USE [MMMGame]
 GO
-/****** Object:  Table [dbo].[ContactMessages]    Script Date: 09/01/2019 12:01:50 ******/
+/****** Object:  Table [dbo].[ContactMessages]    Script Date: 27/01/2019 23:19:53 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -94,7 +94,7 @@ CREATE TABLE [dbo].[ContactMessages](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Feedbacks]    Script Date: 09/01/2019 12:01:50 ******/
+/****** Object:  Table [dbo].[Feedbacks]    Script Date: 27/01/2019 23:19:54 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -111,7 +111,7 @@ CREATE TABLE [dbo].[Feedbacks](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Images]    Script Date: 09/01/2019 12:01:50 ******/
+/****** Object:  Table [dbo].[Images]    Script Date: 27/01/2019 23:19:54 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -125,7 +125,7 @@ CREATE TABLE [dbo].[Images](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Results]    Script Date: 09/01/2019 12:01:50 ******/
+/****** Object:  Table [dbo].[Results]    Script Date: 27/01/2019 23:19:54 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -146,7 +146,7 @@ CREATE TABLE [dbo].[Results](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Users]    Script Date: 09/01/2019 12:01:50 ******/
+/****** Object:  Table [dbo].[Users]    Script Date: 27/01/2019 23:19:54 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -166,6 +166,61 @@ CREATE TABLE [dbo].[Users](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+SET IDENTITY_INSERT [dbo].[ContactMessages] ON 
+
+INSERT [dbo].[ContactMessages] ([ID], [Date], [PhoneNumber], [Email], [Message]) VALUES (1, CAST(N'2019-01-27' AS Date), N'0566665959', N'lihishola@walla.com', N'great game! i really enjoyed it')
+INSERT [dbo].[ContactMessages] ([ID], [Date], [PhoneNumber], [Email], [Message]) VALUES (2, CAST(N'2019-01-27' AS Date), N'0547649697', N'syrelmichael@gmail.com', N'Looking for my next challenge as a fullstack developer! :)')
+SET IDENTITY_INSERT [dbo].[ContactMessages] OFF
+SET IDENTITY_INSERT [dbo].[Feedbacks] ON 
+
+INSERT [dbo].[Feedbacks] ([ID], [Username], [Date], [Subject], [Content]) VALUES (1, N'lihishola', CAST(N'2019-01-27T20:32:00.073' AS DateTime), N'Best game i ever played!', N'It''s a great game! + i think the developer is very cute')
+INSERT [dbo].[Feedbacks] ([ID], [Username], [Date], [Subject], [Content]) VALUES (2, N'MichaelSy', CAST(N'2019-01-27T21:13:17.967' AS DateTime), N'really cool game!', N'Hope you enjoyed it!')
+SET IDENTITY_INSERT [dbo].[Feedbacks] OFF
+SET IDENTITY_INSERT [dbo].[Images] ON 
+
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (1, N'cat.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (2, N'mm.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (3, N'om.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (4, N'om2.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (5, N'om3.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (6, N'ow.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (7, N'yb.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (8, N'yb2.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (9, N'ym.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (10, N'ym2.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (11, N'ym3.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (12, N'ym4.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (13, N'ym5.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (14, N'ym6.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (15, N'yw.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (16, N'yw2.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (17, N'yw3.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (18, N'yw4.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (19, N'yw5.jpg')
+INSERT [dbo].[Images] ([ID], [Name]) VALUES (20, N'yw6.jpg')
+SET IDENTITY_INSERT [dbo].[Images] OFF
+SET IDENTITY_INSERT [dbo].[Results] ON 
+
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (1, 1, CAST(N'2019-01-27T22:37:32.330' AS DateTime), 101, 27, 15, 2, N'lihishola', N'lihi shola')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (2, 1, CAST(N'2019-01-27T22:38:57.720' AS DateTime), 79, 31, 13, 2, N'lihishola', N'lihi shola')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (3, 1, CAST(N'2019-01-27T22:40:14.477' AS DateTime), 73, 29, 21, 3, N'lihishola', N'lihi shola')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (4, 3, CAST(N'2019-01-27T22:44:35.060' AS DateTime), 49, 19, 11, 1, N'pizzapazz', N'pizza pazz')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (5, 7, CAST(N'2019-01-27T22:55:54.337' AS DateTime), 36, 16, 13, 1, N'POLINA SYS', N'POLINA SYS')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (6, 8, CAST(N'2019-01-27T23:14:36.757' AS DateTime), 31, 13, 16, 1, N'MichaelSy', N'Michael Syrel')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (7, 8, CAST(N'2019-01-27T23:15:23.743' AS DateTime), 44, 18, 23, 2, N'MichaelSy', N'Michael Syrel')
+INSERT [dbo].[Results] ([ID], [UserID], [Date], [Duration], [MovesCount], [Score], [Difficulty], [Username], [FullName]) VALUES (8, 8, CAST(N'2019-01-27T23:16:47.770' AS DateTime), 78, 35, 18, 3, N'MichaelSy', N'Michael Syrel')
+SET IDENTITY_INSERT [dbo].[Results] OFF
+SET IDENTITY_INSERT [dbo].[Users] ON 
+
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (1, N'lihishola', N'12345678', N'lihishola@walla.com', N'lihi', N'shola', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (2, N'bazazaliz', N'88888888888', N'liziza_baza@walla.com', N'liza', N'zaza', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (3, N'pizzapazz', N'8888888888', N'pizapazz@walla.com', N'pizza', N'pazz', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (4, N'LIZA PIZA', N'12345678', N'LIZA_BOO@WALLA.COM', N'LIZ', N'CHEN', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (5, N'SARABRARA', N'12345678', N'SARABRARA@WALLA.COM', N'SARA', N'JENSEN', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (6, N'GALYASHKED', N'12345678', N'SHAKED_GALYA@WALLA.COM', N'GALYA', N'SHAKED', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (7, N'POLINA SYS', N'12345678', N'POLINASYS@WALLA.COM', N'POLINA', N'SYS', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+INSERT [dbo].[Users] ([ID], [Username], [Password], [Email], [FirstName], [LastName], [BirthDate], [RegisterDate]) VALUES (8, N'MichaelSy', N'155155155', N'syrelmichael@gmail.com', N'Michael', N'Syrel', CAST(N'0001-01-01' AS Date), CAST(N'2019-01-27' AS Date))
+SET IDENTITY_INSERT [dbo].[Users] OFF
 USE [master]
 GO
 ALTER DATABASE [MMMGame] SET  READ_WRITE 
